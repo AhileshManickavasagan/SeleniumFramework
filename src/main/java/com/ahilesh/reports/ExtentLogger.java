@@ -18,7 +18,12 @@ public class ExtentLogger {
 
     public  static void skip(String Message){
 
-        ExtentManager.getExtentTest().skip(Message,MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getScreenshot()).build());
+        ExtentManager.getExtentTest().skip(Message);
+    }
+
+    public  static void info(String Message){
+
+        ExtentManager.getExtentTest().info(Message);
     }
 
 }

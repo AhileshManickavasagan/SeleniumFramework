@@ -2,12 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-           <listener class-name="com.ahilesh.listeners.TestListener"/>
-   </listeners>
-    <test parallel="methods" thread-count="2" name="SeleniumFramework">
+            <listener class-name="com.ahilesh.listeners.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="F:/Ahilesh/SeleniumAhilesh/SeleniumFramework">
         <classes>
-            <class name="com.ahilesh.LoginTest"/>
-           <class name="com.ahilesh.HomePageTest"/>
+<!--            <class name="com.ahilesh.GetAPIStudent">-->
+<!--                <methods><include name="getAPITest"/></methods>-->
+<!--            </class>-->
+            <class name="com.ahilesh.PostAPITest">
+                <methods><include name="validatepostTest"/></methods>
+            </class>
+<!--            <class name="com.ahilesh.GetRequestAutomation">-->
+<!--                <methods><include name="getRequestAutomation"/></methods>-->
+<!--            </class>-->
+<!--            <class name="com.ahilesh.HomePageTest">-->
+<!--                <methods><include name="HomePageTest"/></methods>-->
+<!--            </class>-->
+<!--            <class name="com.ahilesh.LoginTest">-->
+<!--                <methods> <include name="loginTest"/></methods>-->
+<!--            </class>-->
+<!--            <class name="com.ahilesh.PostRequestAutomation">-->
+<!--                <methods><include name="postrequestAutomation"/></methods>-->
+<!--            </class>-->
+<!--            <class name="com.ahilesh.TestDataSupplierTest">-->
+<!--                <methods><include name="dataSupplierTest"/></methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

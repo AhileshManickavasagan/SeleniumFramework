@@ -9,6 +9,10 @@ public class ScreenshotUtils {
     private ScreenshotUtils(){}
 
     public static String getScreenshot(){
-        return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
+        if (DriverManager.getDriver()==null) {
+            return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
+        }else{
+            return null;
+        }
     }
 }

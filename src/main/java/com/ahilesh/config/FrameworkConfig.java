@@ -16,4 +16,12 @@ public interface FrameworkConfig extends Config {
     String runmode();
 
     String remoteURL();
+
+    String serverurl();
+
+    String username();
+
+    String password();
+
+    int portno();
 }

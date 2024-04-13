@@ -34,4 +34,6 @@ public class BaseTest  {
     public static void closeBrowser(){
             Driver.QuitDriver();
     }
+
+
 }

@@ -9,6 +9,7 @@ import com.ahilesh.reports.ExtentReport;
 import com.aventstack.extentreports.ExtentReports;
 import org.openqa.selenium.By;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import static com.ahilesh.driver.Driver.*;
@@ -22,7 +23,7 @@ public class LoginPage {
     private static final By TXTBOX_TO =By.id("//label[contains(text(),'To')]//following-sibling::div");
     private static final By BTN_SEARCH =By.id("search_button");
 
-    private LoginPage SetFROM(String From){
+    private LoginPage SetFROM(String From) throws MalformedURLException {
         ExtentLogger.pass("Element is clicked");
         ExtentLogger.Fail("Failed Message is sent");
         DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigFactory.getconfig().timeout()));
@@ -46,7 +47,7 @@ public class LoginPage {
 
     }
 
-    public void logintoApplication(String Username,String Password){
+    public void logintoApplication(String Username,String Password) throws MalformedURLException {
         SetFROM(Username).setDestination(Password); //Method Chaining
         clickSearch();
     }

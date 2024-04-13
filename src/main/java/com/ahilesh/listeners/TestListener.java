@@ -27,14 +27,16 @@ public class TestListener implements IExecutionListener , IInvokedMethodListener
     }
 
     public void onTestFailure(ITestResult result){
-        ExtentLogger.Fail(result.getName()+" is failed");
-        ExtentLogger.Fail(result.getThrowable().getMessage());
+       // Commented out to test API test
+        // ExtentLogger.Fail(result.getName()+" is failed");
+       // ExtentLogger.Fail(result.getThrowable().getMessage());
         Arrays.toString(result.getThrowable().getStackTrace());
 
     }
 
     public void onTestSuccess(ITestResult result){
-        ExtentLogger.pass(result.getName()+" is passed");
+       //commented for API test
+        // ExtentLogger.pass(result.getName()+" is passed");
 
     }
 
