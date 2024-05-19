@@ -3,6 +3,7 @@
 🚀 Welcome to the Selenium Hybrid Framework! This repository is built on Selenium 4, BDD using Cucumber, and Java. It's designed to be highly scalable and reusable, integrating several tools and libraries to provide a robust testing solution.
 
 🌟 Key Features
+
 🐍 Selenium 4 and BDD (Cucumber) with Java: Utilizes the latest Selenium version along with Behavior-Driven Development using Cucumber to write human-readable tests.
 
 🌀 Hybrid Framework: Combines the best practices from different testing strategies to provide a versatile and scalable solution.
